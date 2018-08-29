@@ -133,7 +133,7 @@ num81 = 0
 num82 = 0
 
 #Write out to the ABT file using all of the info
-with open("CABT.txt", "w") as abtfile:
+with open("ABT.txt", "w") as abtfile:
     abtfile.write(ABT.header(sellerFEIN, sellerLicenseNum) + "\n")
     abtfile.write(ABT.sellerReport(sellerLicenseNum, startDate, endDate, totalSales) + "\n")
     for company in lines:
